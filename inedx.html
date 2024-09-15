@@ -1,43 +1,80 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
- <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>第一个网页</title>
-</head>
-<body>
-    <div style="
-        background-color: #e191e8;
-        text-align: center;
-        padding: 50px;
-    ">
-    <img src="https://s21.ax1x.com/2024/09/15/pAu04qH.jpg" alt="club.3(クラブドットスリー)" width="120px" height="120px">
-    </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>第一个网页</title>
+    <style>
+      .hezi {
+        text-align: center; /* 文本居中 */
+        color: thistle; /* 文本颜色 */
+        background-color: black; /* 背景颜色 */
+        height: 50px; /* 高度 */
+        width: 600px; /* 宽度 */
+        line-height: 50px; /* 行高，设置为与高度相同以垂直居中 */
+        padding: 0 10px; /* 左右内边距 */
+        margin: 10px auto; /* 水平居中,色块之间的距离为10像素 */
+        border-radius: 10px; /* 可选，给背景添加圆角效果 */
+      }
+      .hezibeijing {
+        text-align: center; /* 文本居中 */
+        background-color: #e191e8; /* 背景颜色 */
+        height: 200px; /* 高度 */
+        width: 600px; /* 宽度 */
+        line-height: 200px; /* 行高，设置为与高度相同以垂直居中 */
+        padding: 0 10px; /* 左右内边距 */
+        margin: 10px auto; /* 水平居中,色块之间的距离为10像素 */
+        border-radius: 10px; /* 给背景添加圆角效果 */
+      }
+    </style>
+  </head>
 
-    <div style="
+  <!-- flex默认是row，为横向排列，column表示竖向排列 -->
+  <body style="display: flex; flex-direction: column; align-items: center">
+    <!-- 主容器，背景为粉色 -->
+    <div class="hezibeijing">
+      <!-- Logo 图片，设置为圆形，设计成链接按钮 -->
+      <a
+        href="https://x.com"
+        style="display: inline-block; text-decoration: none"
+      >
+        <img
+          src="logo.png"
+          alt="club.3(クラブドットスリー)"
+          width="200px"
+          height="200px"
+          style="border-radius: 2rem; display: block"
+        />
+      </a>
+    </div>
+    <!-- 内容容器，最大宽度为760px -->
+    <div
+      style="
         max-width: 760px;
         margin: 40px auto;
-        padding:15px;
+        padding: 15px;
         line-height: 1.7;
-        ">
-        <p>club.3(クラブドットスリー)</p>
-        <p>リーダー：不破　湊</p>
-        <p>メンバー：渡会　雲雀</p>
-        <p>　　　　　風楽　奏斗</p>
-        <p>　　　　　ラトナ・ぷてぃ</p>
-        <p>　　　　　本間　ひまわり</p>
-        <p>　　　　　アルス・アルマル</p>
-        <p>　　　　　叢雲　カゲツ</p>
-        <p>　　　　　ミラン・ケストレル</p>
-        <p>　　　　　五十嵐　梨花</p>
+        text-align: center;
+      "
+    >
+      <h1 class="hezi">club.3(クラブドットスリー)</h1>
+      <h2 class="hezi"><b>リーダー：</b>不破　湊</h2>
+      <p class="hezi"><b>メンバー</b></p>
+      <p class="hezi">渡会　雲雀</p>
+      <p class="hezi">風楽　奏斗</p>
+      <p class="hezi">ラトナ・ぷてぃ</p>
+      <p class="hezi">本間　ひまわり</p>
+      <p class="hezi">アルス・アルマル</p>
+      <p class="hezi">叢雲　カゲツ</p>
+      <p class="hezi">ミラン・ケストレル</p>
+      <p class="hezi">五十嵐　梨花</p>
     </div>
 
-    <div style="
-    background-color: #e191e8;
-    text-align: center;
-    padding: 50px;
-    font-size: 20px;">
-     <a href="https://twitter.com/notifications">公式ページ</a>
-     </div>
-</body>
+    <!-- 底部容器，背景同样为粉色，包含链接 -->
+    <div div class="hezibeijing">
+      <a href="https://twitter.com/notifications">公式ページ</a>
+    </div>
+  </body>
+</html>
+
 </html>
